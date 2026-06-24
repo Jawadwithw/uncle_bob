@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.1.2
+
+### Fixed
+
+- README banner now uses absolute GitHub URL so it renders on pub.dev
+- Updated repository links to `https://github.com/Jawadwithw/uncle_bob`
+
 ## 0.1.1
 
 ### Changed

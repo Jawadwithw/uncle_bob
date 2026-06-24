@@ -2,11 +2,11 @@ name: uncle_bob
 description: >-
   CLI scaffolding for opinionated Flutter clean architecture — bootstrap core
   layers, generate feature modules, and capture API contracts interactively.
-version: 0.1.1
-homepage: https://github.com/jawadabbasnia/uncle_bob
-repository: https://github.com/jawadabbasnia/uncle_bob
-issue_tracker: https://github.com/jawadabbasnia/uncle_bob/issues
-documentation: https://github.com/jawadabbasnia/uncle_bob#readme
+version: 0.1.2
+homepage: https://github.com/Jawadwithw/uncle_bob
+repository: https://github.com/Jawadwithw/uncle_bob
+issue_tracker: https://github.com/Jawadwithw/uncle_bob/issues
+documentation: https://github.com/Jawadwithw/uncle_bob#readme
 
 topics:
   - cli

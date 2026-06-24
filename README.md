@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/uncle_bob_banner.png" alt="uncle_bob — Flutter Clean Architecture CLI" width="100%" />
+![uncle_bob banner](https://raw.githubusercontent.com/Jawadwithw/uncle_bob/main/assets/uncle_bob_banner.png)
 
 <br>
 
@@ -215,7 +215,7 @@ Wire `initDependencies()` in `main.dart`, call each `init<Feature>()`, then expa
 ## 🧪 Develop
 
 ```bash
-git clone https://github.com/jawadabbasnia/uncle_bob.git
+git clone https://github.com/Jawadwithw/uncle_bob.git
 cd uncle_bob
 dart pub get
 dart test
@@ -236,8 +236,8 @@ MIT — see [LICENSE](LICENSE).
 
 **Built with 🧱 clean architecture in mind**
 
-Created by **[Jawad Abbasnia](https://github.com/jawadabbasnia)**
+Created by **[Jawad Abbasnia](https://github.com/Jawadwithw)**
 
-[⭐ Star on GitHub](https://github.com/jawadabbasnia/uncle_bob) · [📦 pub.dev](https://pub.dev/packages/uncle_bob)
+[⭐ Star on GitHub](https://github.com/Jawadwithw/uncle_bob) · [📦 pub.dev](https://pub.dev/packages/uncle_bob)
 
 </div>
