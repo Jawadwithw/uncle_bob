@@ -7,16 +7,25 @@ import 'config.dart';
 
 /// Loaded Flutter/Dart project context for code generation.
 class ProjectContext {
+  /// Target project root directory.
   final Directory root;
+
+  /// Package name from `pubspec.yaml`.
   final String packageName;
+
+  /// Loaded `uncle_bob.yaml` configuration.
   final UncleBobConfig config;
 
+  /// Creates a [ProjectContext] for [root] with [packageName] and [config].
   ProjectContext({
     required this.root,
     required this.packageName,
     required this.config,
   });
 
+  /// Loads project metadata and config from [root].
+  ///
+  /// Throws [StateError] when `pubspec.yaml` is missing or invalid.
   factory ProjectContext.load(Directory root) {
     final pubspecFile = File(p.join(root.path, 'pubspec.yaml'));
     if (!pubspecFile.existsSync()) {
@@ -41,8 +50,10 @@ class ProjectContext {
     return ProjectContext(root: root, packageName: packageName, config: config);
   }
 
+  /// Resolves [relativePath] under [root].
   File file(String relativePath) => File(p.join(root.path, relativePath));
 
+  /// Writes [content] to [relativePath] only when the file does not exist.
   Future<void> writeIfMissing(String relativePath, String content) async {
     final target = file(relativePath);
     if (target.existsSync()) {
@@ -55,6 +66,7 @@ class ProjectContext {
     stdout.writeln('create ${p.normalize(relativePath)}');
   }
 
+  /// Writes [content] to [relativePath], overwriting any existing file.
   Future<void> writeAlways(String relativePath, String content) async {
     final target = file(relativePath);
     await target.parent.create(recursive: true);

@@ -20,8 +20,9 @@ uncle_bob — step-by-step
 4) Add dependencies to pubspec.yaml (see README), then run:
    flutter pub get
 
-5) Scaffold a feature
-   uncle_bob feature organizations
+5) Scaffold a feature (replace with your feature name)
+   uncle_bob feature <feature_name>
+   # e.g. uncle_bob feature settings
 
 6) Answer the questionnaire — paste JSON straight from your API docs/Postman.
    You will be asked for separate pieces:

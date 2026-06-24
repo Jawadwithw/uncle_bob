@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.1.1
+
+### Changed
+
+- Redesigned README with banner, badges, mermaid workflow, and author credit
+- Improved pub.dev metadata (`repository`, `issue_tracker`, `topics`)
+- Expanded dartdoc on exported public API
+- Bumped `lints` to `^6.1.0`
+
+### Fixed
+
+- `paginationData` support aligned with SendBat/Kore API responses
+- Questionnaire reuses saved base response and pagination defaults across features
+
 ## 0.1.0
 
 ### Added

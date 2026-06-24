@@ -8,6 +8,7 @@ import 'commands/init_command.dart';
 
 /// Entry point for the `uncle_bob` command-line application.
 class UncleBobCli {
+  /// Parses [arguments], runs the selected command, and returns an exit code.
   static Future<int> run(List<String> arguments) async {
     final runner = CommandRunner<void>('uncle_bob', _description)
       ..addCommand(GuideCommand())
